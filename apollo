@@ -1,0 +1,24 @@
+root123@root123-QNLYS:~/桌面/apollo-lite$ su apollo
+密码： 
+apollo@root123-QNLYS:/home/root123/桌面/apollo-lite$ whl enter
+>>> Loading project overrides from /home/root123/桌面/apollo-lite/.env.global
+Setup geolocation specific configurations for cn
+GeoLocation settings for Mainland China
+Using local image 'registry.cn-hangzhou.aliyuncs.com/wheelos/apollo:dev-x86_64-22.04-gpu'.
+>>> Checking Environment Config...
+>>> Generating /home/root123/桌面/apollo-lite/docker/.env.dev.local for [dev]...
+>>> Starting Apollo [Mode: dev]...
+[+] up 1/1
+ ✔ Container apollo_dev_apollo_e9d858fd Started                                                                           2.2s
+>>> Container is running.
+>>> Entering container apollo_dev_apollo_e9d858fd...
+[apollo@root123-QNLYS:/apollo]$ bash scripts/bootstrap.sh
+[INFO] DREAMVIEW_URL is set to http://localhost:8888
+nohup: appending output to 'nohup.out'
+[ OK ] Launched module monitor.
+Updating frontend symlink: /apollo/modules/dreamview/frontend/dist -> /apollo/.cache/bazel/540135163923dd7d5820f3ee4b306b32/external/_main~_repo_rules~dreamview_frontend_assets/dist
+nohup: appending output to 'nohup.out'
+[ OK ] Launched module dreamview.
+[INFO] SUCCESS: Dreamview is fully running at http://localhost:8888
+[apollo@root123-QNLYS:/apollo]$ 
+
